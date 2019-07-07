@@ -14,6 +14,17 @@
 		8F39C6F122D2395C00FE2092 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F39C6F022D2395C00FE2092 /* Preview Assets.xcassets */; };
 		8F39C6F422D2395C00FE2092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F39C6F222D2395C00FE2092 /* LaunchScreen.storyboard */; };
 		8F39C6FF22D2395D00FE2092 /* SWGuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F39C6FE22D2395D00FE2092 /* SWGuideTests.swift */; };
+		8F39C71322D23F7700FE2092 /* SwapiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F39C71022D23F7700FE2092 /* SwapiKit.swift */; };
+		8FBE10C622D240810088FE89 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE10BF22D240800088FE89 /* Film.swift */; };
+		8FBE10C722D240810088FE89 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE10C022D240800088FE89 /* Planet.swift */; };
+		8FBE10C822D240810088FE89 /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE10C122D240800088FE89 /* Starship.swift */; };
+		8FBE10C922D240810088FE89 /* Specy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE10C222D240810088FE89 /* Specy.swift */; };
+		8FBE10CA22D240810088FE89 /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE10C322D240810088FE89 /* Mode.swift */; };
+		8FBE10CB22D240810088FE89 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE10C422D240810088FE89 /* People.swift */; };
+		8FBE10CC22D240810088FE89 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE10C522D240810088FE89 /* Vehicle.swift */; };
+		8FBE10D022D2409D0088FE89 /* PeopleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE10CE22D2409D0088FE89 /* PeopleService.swift */; };
+		8FBE10D122D2409D0088FE89 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE10CF22D2409D0088FE89 /* APIService.swift */; };
+		8FBE10D422D2448E0088FE89 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBE10D322D2448E0088FE89 /* AppViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +49,17 @@
 		8F39C6FA22D2395D00FE2092 /* SWGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F39C6FE22D2395D00FE2092 /* SWGuideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWGuideTests.swift; sourceTree = "<group>"; };
 		8F39C70022D2395D00FE2092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F39C71022D23F7700FE2092 /* SwapiKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwapiKit.swift; sourceTree = "<group>"; };
+		8FBE10BF22D240800088FE89 /* Film.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		8FBE10C022D240800088FE89 /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		8FBE10C122D240800088FE89 /* Starship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
+		8FBE10C222D240810088FE89 /* Specy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specy.swift; sourceTree = "<group>"; };
+		8FBE10C322D240810088FE89 /* Mode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mode.swift; sourceTree = "<group>"; };
+		8FBE10C422D240810088FE89 /* People.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		8FBE10C522D240810088FE89 /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		8FBE10CE22D2409D0088FE89 /* PeopleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleService.swift; sourceTree = "<group>"; };
+		8FBE10CF22D2409D0088FE89 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		8FBE10D322D2448E0088FE89 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +101,8 @@
 		8F39C6E622D2395A00FE2092 /* SWGuide */ = {
 			isa = PBXGroup;
 			children = (
+				8FBE10D222D2446E0088FE89 /* EnvironmentObject */,
+				8F39C70F22D23F6100FE2092 /* SwapiKit */,
 				8F39C6E722D2395A00FE2092 /* AppDelegate.swift */,
 				8F39C6E922D2395A00FE2092 /* SceneDelegate.swift */,
 				8F39C6EB22D2395A00FE2092 /* ContentView.swift */,
@@ -107,6 +131,47 @@
 			path = SWGuideTests;
 			sourceTree = "<group>";
 		};
+		8F39C70F22D23F6100FE2092 /* SwapiKit */ = {
+			isa = PBXGroup;
+			children = (
+				8FBE10CD22D240940088FE89 /* Services */,
+				8FBE10BD22D240650088FE89 /* Models */,
+				8F39C71022D23F7700FE2092 /* SwapiKit.swift */,
+			);
+			path = SwapiKit;
+			sourceTree = "<group>";
+		};
+		8FBE10BD22D240650088FE89 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8FBE10BF22D240800088FE89 /* Film.swift */,
+				8FBE10C322D240810088FE89 /* Mode.swift */,
+				8FBE10C422D240810088FE89 /* People.swift */,
+				8FBE10C022D240800088FE89 /* Planet.swift */,
+				8FBE10C222D240810088FE89 /* Specy.swift */,
+				8FBE10C122D240800088FE89 /* Starship.swift */,
+				8FBE10C522D240810088FE89 /* Vehicle.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8FBE10CD22D240940088FE89 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8FBE10CF22D2409D0088FE89 /* APIService.swift */,
+				8FBE10CE22D2409D0088FE89 /* PeopleService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8FBE10D222D2446E0088FE89 /* EnvironmentObject */ = {
+			isa = PBXGroup;
+			children = (
+				8FBE10D322D2448E0088FE89 /* AppViewModel.swift */,
+			);
+			path = EnvironmentObject;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,6 +188,8 @@
 			dependencies = (
 			);
 			name = SWGuide;
+			packageProductDependencies = (
+			);
 			productName = SWGuide;
 			productReference = 8F39C6E422D2395A00FE2092 /* SWGuide.app */;
 			productType = "com.apple.product-type.application";
@@ -173,6 +240,8 @@
 				Base,
 			);
 			mainGroup = 8F39C6DB22D2395A00FE2092;
+			packageReferences = (
+			);
 			productRefGroup = 8F39C6E522D2395A00FE2092 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -208,9 +277,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FBE10C622D240810088FE89 /* Film.swift in Sources */,
+				8FBE10C822D240810088FE89 /* Starship.swift in Sources */,
+				8FBE10D422D2448E0088FE89 /* AppViewModel.swift in Sources */,
+				8FBE10C922D240810088FE89 /* Specy.swift in Sources */,
 				8F39C6E822D2395A00FE2092 /* AppDelegate.swift in Sources */,
+				8FBE10CB22D240810088FE89 /* People.swift in Sources */,
+				8F39C71322D23F7700FE2092 /* SwapiKit.swift in Sources */,
+				8FBE10C722D240810088FE89 /* Planet.swift in Sources */,
 				8F39C6EA22D2395A00FE2092 /* SceneDelegate.swift in Sources */,
+				8FBE10D022D2409D0088FE89 /* PeopleService.swift in Sources */,
+				8FBE10D122D2409D0088FE89 /* APIService.swift in Sources */,
+				8FBE10CC22D240810088FE89 /* Vehicle.swift in Sources */,
 				8F39C6EC22D2395A00FE2092 /* ContentView.swift in Sources */,
+				8FBE10CA22D240810088FE89 /* Mode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
