@@ -9,12 +9,34 @@
 import SwiftUI
 import Combine
 
-class AppViewModel: BindableObject {
-    let didChange = PassthroughSubject<Void, Never>()
+public class AppViewModel: BindableObject {
+    let sk = SwapiKit()
     
-    var peoples = Array<PeopleJSON>() {
+    public let didChange = PassthroughSubject<Void, Never>()
+    
+    public var peoples = Array<FilledPeople>() {
         didSet {
             didChange.send(())
+        }
+    }
+    
+    public var films = Array<FilledFilm>() {
+        didSet {
+            didChange.send(())
+        }
+    }
+    
+    init() {
+        sk.peopleService.getFilledPeoples { (peoples) in
+            DispatchQueue.main.async {
+                self.peoples = peoples
+            }
+        }
+        
+        sk.filmService.getFilledFilms { (films) in
+            DispatchQueue.main.async {
+                self.films = films
+            }
         }
     }
 }

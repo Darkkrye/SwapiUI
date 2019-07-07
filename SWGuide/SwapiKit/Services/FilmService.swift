@@ -8,31 +8,31 @@
 //                                     __/ |
 //                                    |___/
 //
-//  PeopleService.swift
-//  
+//  FilmService.swift
+//
 //
 //  Created by Pierre on 07/07/2019.
 //
 
 import Foundation
 
-public class PeopleService: NSObject {
+public class FilmService: NSObject {
     let mode: Mode = .full
     let api: APIService = APIService.shared
     
-    public func getFilledPeoples(completionHandler: @escaping ((_ peoples: Array<FilledPeople>) -> Void)) {
-        self.getPeoples { (peoples) in
-            var filledPeoples = Array<FilledPeople>()
-            for people in peoples {
-                filledPeoples.append(FilledPeople(json: people))
+    public func getFilledFilms(completionHandler: @escaping ((_ films: Array<FilledFilm>) -> Void)) {
+        self.getFilms { (films) in
+            var filledFilms = Array<FilledFilm>()
+            for film in films {
+                filledFilms.append(FilledFilm(json: film))
             }
             
-            completionHandler(filledPeoples)
+            completionHandler(filledFilms)
         }
     }
     
-    public func getPeoples(completionHandler: @escaping ((_ peoples: Array<People>) -> Void)) {
-        let route = self.api.ENDPOINT + EndpointRoutes.PEOPLE.rawValue
+    public func getFilms(completionHandler: @escaping ((_ films: Array<Film>) -> Void)) {
+        let route = self.api.ENDPOINT + EndpointRoutes.FILM.rawValue
         
         self.api.getRequest(route: route, headers: self.api.headers) { (statusCode, data) in
             guard let d = data, statusCode < 300 else { return }
@@ -40,19 +40,19 @@ public class PeopleService: NSObject {
             do {
                 if let json = (try? JSONSerialization.jsonObject(with: d, options: [])) as? Dictionary<String, Any> {
                     if let results = json["results"] as? Array<Dictionary<String, Any>> {
-                        var peoples = Array<People>()
+                        var films = Array<Film>()
                         for result in results {
                             let jsonData = try JSONSerialization.data(withJSONObject: result, options: .prettyPrinted)
                             let decoder = JSONDecoder()
-                            let people = try decoder.decode(People.self, from: jsonData)
-                            peoples.append(people)
+                            let film = try decoder.decode(Film.self, from: jsonData)
+                            films.append(film)
                         }
                         
-                        completionHandler(peoples)
+                        completionHandler(films)
                     }
                 }
             } catch {
-            
+                print(error)
             }
         }
     }

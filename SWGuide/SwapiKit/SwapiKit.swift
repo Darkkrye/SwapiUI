@@ -18,4 +18,5 @@ import Foundation
 
 public class SwapiKit: NSObject {
     public let peopleService = PeopleService()
+    public let filmService = FilmService()
 }

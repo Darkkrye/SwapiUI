@@ -15,8 +15,12 @@
 //
 
 import Foundation
-/*
-public class People: NSObject {
+import UIKit
+import SwiftUI
+
+public class FilledPeople: NSObject, Identifiable {
+    public var id: Int
+    
     var name: String
     var birthYear: String
     var eyeColor: String
@@ -25,17 +29,40 @@ public class People: NSObject {
     var height: String
     var mass: String
     var skinColor: String
-    var homeworld: Planet
-    var films: Array<Film>
-    var species: Array<Specy>
-    var starships: Array<Starship>
-    var vehicles: Array<Vehicle>
+    /*var homeworld: Planet?
+    var films: Array<Film>?
+    var species: Array<Specy>?
+    var starships: Array<Starship>?
+    var vehicles: Array<Vehicle>?*/
     var url: String
     var created: String
     var edited: String
-}*/
+    var image = UIImage(named: "DefaultCharacter")!
+    var imageURL: URL
+    
+    public init(json: People) {
+        self.name = json.name
+        self.birthYear = json.birth_year
+        self.eyeColor = json.eye_color
+        self.gender = json.gender
+        self.hairColor = json.hair_color
+        self.height = json.height
+        self.mass = json.mass
+        self.skinColor = json.skin_color
+        /*self.homeworld = Planet()
+        self.films = Array<Film>()
+        self.species = Array<Specy>()
+        self.starships = Array<Starship>()
+        self.vehicles = Array<Vehicle>()*/
+        self.url = json.url
+        self.created = json.created
+        self.edited = json.edited
+        self.id = ModelHelpers.getIdFrom(url: self.url)
+        self.imageURL = URL(string: "https://starwars-visualguide.com/assets/img/characters/\(self.id).jpg")!
+    }
+}
 
-public class PeopleJSON: NSObject, Decodable {
+public class People: NSObject, Decodable {
     var name: String
     var birth_year: String
     var eye_color: String

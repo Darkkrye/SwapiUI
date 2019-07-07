@@ -7,17 +7,14 @@
 //
 
 import SwiftUI
+import URLImage
 
 struct ContentView : View {
+    @EnvironmentObject var appVM: AppViewModel
+    
     var body: some View {
-        Text("Hello World")
+        VStack {
+            Text("Hello, World")
+        }
     }
 }
-
-#if DEBUG
-struct ContentView_Previews : PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
-#endif
